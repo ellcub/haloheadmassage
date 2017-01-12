@@ -8,14 +8,15 @@
 main, header {display: block}
 
 body {
-    background: #fff;
-    color: #004794;
+    background: #D1BD8E url('images/indian_pattern_h490.png') no-repeat fixed;
+    color: #54211d;
     margin: 0;
     font-family: 'Raleway', sans-serif;
   }
 
 main {
-    padding: 25px;
+    margin-left: 260px;
+    padding: 10px;
   }
 
   h1, h2, h3, h4 {
@@ -23,31 +24,62 @@ main {
         font-weight: bolder;
   }
 
-  #hhmlogo {
-    vertical-align: middle;
-    width: 180px;
-    padding-right: 10px;
+@media only screen and (min-width : 481px) {
+  .mb {
+    display: none;
   }
-
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #hhmlogo {
-      width: 90px;
-    }
-  }
-
-
 }
+
+  /* Mobile */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      .mb {
+        display: block;
+      }
+      body {
+          background: #D1BD8E;
+          color: #54211d;
+          margin: 0;
+          font-family: 'Raleway', sans-serif;
+        }
+
+      main {
+          margin-left: 0;
+          padding: 0 40px 40px 40px;
+        }
+
+        .mob-logo {
+          display: inline-block;
+          margin-left: -10px;
+          vertical-align: middle;
+          height: 300px;
+        }
+
+        .title {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .title h1 {
+          font-size: 60px;
+        }
+
+        .nm {
+          display: none;
+        }
+    }
 
 
 </style>
 </head>
 
 <body>
-
+  <header class="mb">
+        <img src="images/indian_pattern_h300.png" class="mob-logo" />
+        <div class="title"><h1>Indian Head Massage<br> in Brighton &amp; Hove</h1></div>
+  </header>
   <main>
 
-    <h1><img src="images/haloheadmassage.png" alt="Halo Head Massage logo" id="hhmlogo">
-      Indian Head Massage in Brighton &amp; Hove</h1>
+    <h1 class="nm">Indian Head Massage in Brighton &amp; Hove</h1>
 
       <h2>What is it and what can I expect?</h2>
       <p>Indian Head Massage takes place seated in a chair
@@ -77,6 +109,7 @@ main {
         <li>Promotes general relaxation</li>
         <li>Lifts the mood and promotes feelings of peace and calmness</li>
       </ul>
+
 
       <h2>A brief history of Indian Head Massage</h2>
       <p>Massage has been an important part of Indian life for millennia, with roots in the ancient medicine
@@ -116,11 +149,12 @@ main {
 
     <h2>About Ellen</h2>
     <p>Ellen holds a Practitioners Diploma in Indian Head Massage.</p>
-    
 
     <h2>Booking</h2>
-    <p>To book, please get in touch with me on 07413 750071<p>
+    <p>To book, please get in touch with me at <strong>&#104;&#97;&#108;&#111;&#104;&#101;&#97;&#100;&#109;&#97;&#115;&#115;&#97;&#103;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109; </strong>
+<p>
     <p>The massage is &pound;20 and lasts around 30 minutes.</p>
+    <p>Availability: Daytime, evenings, weekends.  Just not early mornings ;-)</p>
 
   </main>
 
